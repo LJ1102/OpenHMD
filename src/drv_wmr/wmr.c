@@ -356,7 +356,7 @@ static ohmd_device* open_device(ohmd_driver* driver, ohmd_device_desc* desc)
 		wmr_config_header* hdr = (wmr_config_header*)config;
 		LOGI("Model name: %.64s\n", hdr->name);
 		if (strncmp(hdr->name,
-			    "Samsung Windows Mixed Reality 800ZAA", 64) == 0) {
+			    "Samsung Windows Mixed Reality 800Zxx", 34) == 0) {
 			samsung = true;
 		}
 
